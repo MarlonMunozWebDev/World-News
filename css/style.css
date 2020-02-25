@@ -1,0 +1,149 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+}
+
+
+.section-text {
+  padding: 1rem;
+}
+
+.contenedor{
+  display: grid;
+  /*NUMERO DE COLUMNAS QUE SE REPITAN PORQUE SON DEL MISMO TAMAÑO Y EL TAMAÑO DE CADA UNA  */
+  grid-template-columns: repeat(auto-fill, 330px);
+  /*PONER UNA SEPARACION ENTRE LAS COLUMNAS */
+  grid-gap: 1rem;
+  justify-content: center;
+}
+.item{
+  border-radius: 0.5rem;
+  padding: 0;
+  border: 0.2rem solid green;
+}
+
+.item h1 , h2 {
+  background-color: green;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+.item img{
+  max-width: 100%;
+}
+
+.navegador {
+  grid-column: span 3;
+  border: none;
+  border-bottom: 1.4rem solid green;
+}
+
+.navegador a {
+  display: inline;
+  margin: 2rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.navegador a:hover {
+  color: green;
+}
+
+.contenido-header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  align-items: center;
+  border-bottom: 1.6rem solid green;
+}
+
+.barra img {
+  height: 8rem;
+}
+
+.level1{
+  grid-row-end: span 1;
+  grid-column: span 2;
+}
+
+.level2{
+  grid-row-end: span 2;
+}
+
+.level3{
+  grid-row-end: span 1;
+}
+
+.level4 {
+    grid-row-end: span 1;
+}
+
+.principal {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+}
+
+.principal img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+  .section4 {
+    background-color: green;
+  }
+
+  .iconos-caracteristicas {
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex: 4;
+  }
+
+  .iconos-caracteristicas li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .iconos-caracteristicas li img {
+    width: 2.5rem;
+
+  }
+  .icono-imagen {
+        width: 100%;
+        border-radius: 0.5rem;
+  }
+
+
+.section-icon {
+  display: grid;
+  grid-template-rows: 50% 90%;
+  justify-content: space-between;
+}
+
+.information {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-content: space-between;
+}
+
+.information img {
+    object-fit: cover;
+}
+
+.imagen-redes {
+  height: 9rem;
+  object-fit: cover;
+}
